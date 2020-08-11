@@ -75,6 +75,16 @@ public struct ShimmerModifier: ViewModifier {
         
         return AnyView(view)
     }
+    
+    public init(
+         isActive: Bool,
+         speed: Double,
+         angle: Angle
+    ) {
+         self.isActive = isActive
+         self.speed = speed
+         self.angle = angle
+     }
 }
 
 extension View {
