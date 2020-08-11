@@ -79,7 +79,7 @@ public struct ShimmerModifier: ViewModifier {
 
 extension View {
     
-    func shimmer(
+   public func shimmer(
         isActive: Bool = true,
         speed: Double = 0.15,
         angle: Angle = .init(degrees: 70)
